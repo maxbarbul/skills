@@ -9,6 +9,14 @@ description: Applies Twelve-Factor App rules to architecture and implementation 
 
 Use this skill when user asks to implement, refactor, or architect an app/service with cloud portability and operability.
 
+Twelve-factor target:
+- Use declarative setup automation to reduce onboarding and setup cost.
+- Keep a clean OS contract for maximum runtime portability.
+- Design for cloud deployment and reduced ops coupling.
+- Minimize dev/prod divergence to support continuous deployment.
+- Scale without major tooling, architecture, or workflow rewrites.
+- Apply across any language stack and backing-service mix.
+
 Checklist:
 - Identify app boundary and deploy targets using [rules/codebase.md](rules/codebase.md).
 - Validate dependency declaration and isolation via [rules/dependencies.md](rules/dependencies.md).
@@ -23,7 +31,7 @@ Checklist:
 ### 1. Architecture review workflow
 
 - Determine if request is app-wide architecture or narrow implementation.
-- For app-wide architecture, assess all factors in [rules/toc.md](rules/toc.md).
+- For app-wide architecture, assess all factor rule files in [rules](rules).
 - Produce pass/fail findings by factor with concrete code or infra actions.
 - Prioritize violations that block deploy portability, stateless scaling, or safe operations.
 
@@ -41,8 +49,3 @@ Checklist:
 - Logs: app writes event stream to stdout/stderr only ([rules/logs.md](rules/logs.md)).
 - Releases: immutable release units with rollback path ([rules/build-release-run.md](rules/build-release-run.md)).
 - Shutdown/startup: fast boot and graceful termination ([rules/disposability.md](rules/disposability.md)).
-
-## References
-
-- Start context: [rules/intro.md](rules/intro.md), [rules/who.md](rules/who.md), [rules/toc.md](rules/toc.md)
-- Factor rules: all files in [rules](rules)
