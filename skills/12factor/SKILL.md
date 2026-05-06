@@ -1,5 +1,5 @@
 ---
-name: twelve-factor
+name: 12factor
 description: Applies Twelve-Factor App rules to architecture and implementation decisions for services and web apps. Use when designing new apps/services, reviewing deployment/runtime model, setting config/dependency/logging/process strategy, or when user mentions 12factor, twelve-factor, cloud-native app design, SaaS architecture, stateless processes, env config, or build-release-run.
 ---
 
