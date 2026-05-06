@@ -65,6 +65,7 @@ Done means all required gates pass with no errors.
 - [ ] build passes.
 - [ ] Easy warnings in changed code resolved or documented.
 - [ ] 12factor implications reviewed for touched components.
+- [ ] Do NOT push until all checklist items above are complete and all gates pass.
 
 ## Output format
 
